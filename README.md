@@ -1,4 +1,4 @@
-## Python_Osint 
+## Python Osint 
 
 #### Includes
 - Subdomain Enumeration
