@@ -2,7 +2,7 @@ import osint_module
 import os
 import threading
 
-host='baskent.edu.tr'
+host=<ENTER HOST NAME>  #Will be adding arg.parser soon
 api='https://api.hackertarget.com'
 subdomain_query=api+'/hostsearch/?q='+host
 dnslookup_query=api+'/dnslookup/?q='+host
