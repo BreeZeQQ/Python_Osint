@@ -12,6 +12,7 @@
 - os
 - threading
 - requests
+- argparse
 
 
 #### Install Requirements
@@ -19,5 +20,5 @@
 
 
 #### Run Script
-`python python_osint.py`
+`python python_osint.py --host <hostname>`
 
