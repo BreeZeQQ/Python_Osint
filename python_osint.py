@@ -1,8 +1,14 @@
 import osint_module
 import os
 import threading
+import argparse
 
-host=<ENTER HOST NAME>  #Will be adding arg.parser soon
+
+ap = argparse.ArgumentParser()
+ap.add_argument( "--host", required=True,	help="Enter a hostname")
+args = vars(ap.parse_args())
+host=args["host"]
+
 api='https://api.hackertarget.com'
 subdomain_query=api+'/hostsearch/?q='+host
 dnslookup_query=api+'/dnslookup/?q='+host
@@ -11,7 +17,6 @@ zonetransfer_query=api+'/zonetransfer/?q='+host
 reverseip_query=api+'/hostreverseiplookup/?q='+host
 
 
-#ARG PARSER 
 
 threading.Thread(osint_module.dnslookup(dnslookup_query)).start()
 threading.Thread(osint_module.subdomain(subdomain_query)).start()
