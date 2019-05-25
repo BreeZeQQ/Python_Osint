@@ -14,7 +14,10 @@
 - requests
 
 
+#### Install Requirements
+`pip install -r requirements.txt`
 
 
-
+#### Run Script
+`python python_osint.py`
 
