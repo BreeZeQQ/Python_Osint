@@ -11,3 +11,4 @@
 
 - os
 - threading
+- requests
